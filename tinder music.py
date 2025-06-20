@@ -134,7 +134,7 @@ class Ui_TinderMusicApp(object):
         self.button_thunderous.hide()
 
         self.button_restart = QtWidgets.QPushButton(Form)
-        self.button_restart.setGeometry(QtCore.QRect(580, 600, 100, 40))
+        self.button_restart.setGeometry(QtCore.QRect(270, 700, 100, 40))# 580, 600
         self.button_restart.setText("🔄 重選")
         self.button_restart.hide()
 
@@ -413,6 +413,7 @@ class Ui_TinderMusicApp(object):
         self.buttonBox.accepted.connect(self.like_track)
         self.buttonBox.rejected.connect(self.next_track)
         self.show_track()
+        
     def refresh_track_list(self):
         self.list_widget.clear()
         for track in self.liked_tracks:
